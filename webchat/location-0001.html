@@ -1,0 +1,34 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Location 0001</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        html {
+            background: url('images/background.jpg') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+    </style>
+    <script src="https://assets.flex.twilio.com/releases/flex-webchat-ui/2.7.1/twilio-flex-webchat.min.js" integrity="sha512-uxirrFUoGuvGOOIkCX5ZzQ5WfEuDqRwtherlm5QjZxNeVoFgzL3KZXA98NHV8RsAdR2awLmOmBN1r/QCgEFvhA==" crossorigin></script>
+</head>
+
+<body>
+<script>
+    const appConfig = {
+        accountSid:"ACxxx",
+        flexFlowSid:"FOxxx",
+        context: {
+            spacexLocation: "0383001",
+            friendlyName: "Incoming from 0383001"
+        }
+    };
+    Twilio.FlexWebChat.renderWebChat(appConfig);
+</script>
+</body>
+</html>
